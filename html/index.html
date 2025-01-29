@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="styles.css?v=1.0">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+
+    <div class="rectangle-parent">
+      <div class="ESC"><img id="exit" src="./assets/go_back_esc.svg"/> ESC <span id="back">BACK</span><div class="line2"></div></div>
+      <div class="desc2">
+        <img class="desc-icon" alt="" src="./assets/info.svg" />
+        <div class="desc_text2"></div>
+      </div>
+      <div class="stats">
+
+        <img id="damage_img" src="./assets/damage.svg"/>
+        <div class="text_stats" id="damage">DAMAGE</div>
+        <div class="progress_stats" id="damage_progress">
+          <div class="amount_progress" id="damage_amount"></div>
+        </div>
+
+        <img id="firerate_img" src="./assets/fire_rate.svg"/>
+        <div class="text_stats" id="firerate">FIRE RATE</div>
+        <div class="progress_stats" id="firerate_progress">
+          <div class="amount_progress" id="firerate_amount"></div>
+        </div>
+
+        <img id="accuracy_img" src="./assets/accuary.svg"/>
+        <div class="text_stats" id="accuracy">ACCURACY</div>
+        <div class="progress_stats" id="accuracy_progress">
+          <div class="amount_progress" id="accuracy_amount"></div>
+        </div>
+
+        <img id="range_img" src="./assets/range.svg"/>
+        <div class="text_stats" id="range">RANGE</div>
+        <div class="progress_stats" id="range_progress">
+          <div class="amount_progress" id="range_amount"></div>
+        </div>
+
+      </div>
+
+      <div class="label_weapon">ASSAULT RIFLE</div>
+      <div class="line"></div>
+      <b class="b">12000€</b>
+
+      <div class="buy_class">
+        <img class="botton-left-icon" onclick="left()" alt="" src="./assets/turn_left.svg" />
+
+        <img class="botton-right-icon" onclick="right()" src="./assets/turn_right.svg" />
+  
+        <div class="buy" onclick="buy()"> <div id="textbuy"></div></div>
+      </div>
+
+    </div>
+
+    <div class="intro">
+      <div class="ESC"><img id="exit" src="./assets/go_back_esc.svg"/> ESC <span id="back2">BACK</span><div class="line2"></div></div>
+      <div class="shoptext"><img id="pistol" src="./assets/rifle_icon.svg"/><span id="illegaltext">ILLEGAL</span><span id="shoptext_2">WEAPONS</span> <span id="shoptext_y">shop</span></div>
+      <div class="botton_see" onclick="see_weapon()">
+        <div class="text_botton" id="text_botton">» SEE WEAPONS «</div>   
+      </div>
+      <div class="botton_see2" onclick="see_item()">
+        <div class="text_botton2" id="text_botton2">» SEE ITEMS «</div>   
+      </div>
+    </div>
+    <div class="backgroungbuy"></div>
+    <div class="finish" id="finish">
+      <div class="label_weapon_finish"><span id="weaponname">{WEAPON NAME}</span></div>
+      <div class="line_finish"></div>
+      <div class="desc3">
+        <img class="desc-icon" alt="" src="./assets/info.svg" />
+        <div class="desc_text2" style="font-size: 0.7vw;"></div>
+      </div>
+      <div class="stats2">
+
+        <img id="damage_img2" src="./assets/damage.svg"/>
+        <div class="text_stats2" id="damage2">DAMAGE</div>
+        <div class="progress_stats2" id="damage_progress2">
+          <div class="amount_progress" id="damage_amount2"></div>
+        </div>
+
+        <img id="firerate_img2" src="./assets/fire_rate.svg"/>
+        <div class="text_stats2" id="firerate2">FIRE RATE</div>
+        <div class="progress_stats2" id="firerate_progress2">
+          <div class="amount_progress" id="firerate_amount2"></div>
+        </div>
+
+        <img id="accuracy_img2" src="./assets/accuary.svg"/>
+        <div class="text_stats2" id="accuracy2">ACCURACY</div>
+        <div class="progress_stats2" id="accuracy_progress2">
+          <div class="amount_progress" id="accuracy_amount2"></div>
+        </div>
+
+        <img id="range_img2" src="./assets/range.svg"/>
+        <div class="text_stats2" id="range2">RANGE</div>
+        <div class="progress_stats2" id="range_progress2">
+          <div class="amount_progress" id="range_amount2"></div>
+        </div>
+
+      </div>
+      <div class="textfinish" id="textfinish">Do you want to buy it for <span id="priceweapon">{PRICE}</span>?</div>
+      <div class="buy_finish" id="yes_buy" onclick="finish('yes')"><span class="textfinish3" id="yes_text"> YES </span></div>
+      <div class="buy_finish2" id="no_buy" onclick="finish('no')"><span class="textfinish2"  id="no_text"> NO </span></div>
+    </div>
+
+    <script>
+      function left() {
+        $.post(`https://${GetParentResourceName()}/left`, JSON.stringify({}));
+      }
+      function right() {
+        $.post(`https://${GetParentResourceName()}/right`, JSON.stringify({}));
+      }
+      function see_weapon() {
+        $.post(`https://${GetParentResourceName()}/see`, JSON.stringify({type: "weapon"}));
+      }
+      function see_item() {
+        $.post(`https://${GetParentResourceName()}/see`, JSON.stringify({type: "item"}));
+      }
+      function buy() {
+        $.post(`https://${GetParentResourceName()}/buy`, JSON.stringify({}));
+      }
+      function finish(info) {
+        $.post(`https://${GetParentResourceName()}/finish`, JSON.stringify({ info }));
+      }
+    </script>
+    
+    <script src="main.js"></script>
+  </body>
+</html>

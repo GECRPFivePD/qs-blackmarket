@@ -1,0 +1,923 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&display=swap');
+
+* {
+  user-select: none;
+  -webkit-user-drag: none;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.frame-child {
+  position: absolute;
+  top: 804px;
+  left: 0;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7) 66.15%);
+  width: 1920px;
+  height: 276px;
+}
+.info {
+  position: absolute;
+  top: 44vw;
+  left: 41.25vw;
+  border-radius: 6px;
+  background: linear-gradient( 89.94deg, rgba(0, 0, 0, 0.6), #272726 50.28%, rgba(0, 0, 0, 0.6) );
+  border: 1px solid #777f19;
+  box-sizing: border-box;
+  width: 17.5vw;
+  height: 4.9vw;
+}
+.label_weapon,
+.botton-left-icon,
+.botton-right-icon {
+  position: absolute;
+  top: 44.4vw;
+  left: 39.5vw;
+  width: 0.8vw;
+}
+.label_weapon,
+.botton-right-icon {
+  left: 59.7vw;
+  width: 0.8vw;
+}
+.botton-left-icon:hover,
+.botton-right-icon:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.label_weapon {
+  top: 3.7vw;
+  left: 32vw;
+  display: inline-block;
+  width: 36vw;
+  height: 6vw;
+  text-align: center;
+  font-size: 3vw;
+  text-shadow: 0px 0px 6px #f3f3f3;
+  font-weight: lighter;
+}
+
+.line {
+  position: absolute;
+  left: 38vw;
+  top: 7.4vw;
+  width: 24vw;
+  height: 0.16vw;
+  background: #00cdff;
+}
+
+.b {
+  position: absolute;
+  top: 7.8vw;
+  left: 41.54vw;
+  font-size: 1.5vw;
+  color: #00cdff;
+  width: 17vw;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0px 0px 5px #72ccff;
+  font-weight: 400
+}
+.rectangle-parent {
+  opacity: 0;
+  position: relative;
+  display: none;
+  width: 100%;
+  height: 1080px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 21px;
+  color: var(--color-white);
+  animation: opacidad 0.5s ease-in-out forwards;
+  background: #00000051;
+}
+
+.intro {
+  opacity: 0;
+  position: relative;
+  background: #00000051;
+    background-image: none;
+  display: none;
+  width: 100%;
+  height: 1080px;
+  font-style: semi-bold;
+  overflow: hidden;
+  text-align: left;
+  font-size: 21px;
+  background-image: url(./assets/background.png);
+  animation: opacidad 0.5s ease-in-out forwards;
+}
+
+.botton_see {
+  position: absolute;
+  top: 36vw;
+  left: 44.7vw;
+  width: 16vw;
+  height: 4vw;
+  font-size: 28px;
+  background: linear-gradient(90deg, rgb(35, 94, 127) 0%, rgb(0, 161, 253) 31%, rgb(61, 196, 255) 100%);
+  box-shadow: 0px 0px 4px 4px #235e7f;
+  text-align: center;
+  transform-origin: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.botton_see2 {
+  position: absolute;
+  top: 41.8vw;
+  left: 44.7vw;
+  width: 16vw;
+  height: 4vw;
+  font-size: 28px;
+  background: linear-gradient(90deg, rgb(35, 94, 127) 0%, rgb(0, 161, 253) 31%, rgb(61, 196, 255) 100%);
+  box-shadow: 0px 0px 4px 4px #235e7f;
+  text-align: center;
+  transform-origin: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.text_botton {
+  color: #FFF;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 0.04vw;
+  top: 1.05vw;
+  height: 3vw;
+  width: 16vw;
+  letter-spacing: 0.1vw;
+}
+
+.text_botton2 {
+  color: #FFF;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 0.04vw;
+  top: 1.05vw;
+  height: 3vw;
+  width: 16vw;
+  letter-spacing: 0.1vw;
+}
+
+.botton_see:hover {
+  cursor: pointer;
+  transform: scale(1.02)
+}
+
+.botton_see2:hover {
+  cursor: pointer;
+  transform: scale(1.02)
+}
+
+.shoptext {
+  position: absolute;
+  left: 44.5vw;
+  top: 11vw;
+  color: #FFF;
+  text-shadow: 0px 0px 7px #f3f3f3;
+  font-size: 4.7vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+#shoptext_y {
+  top: 10.8vw;
+  position: absolute;
+  left: 0.1vw;
+  color: #72ccff;
+  font-size: 3.4vw;
+  font-style: italic;
+  text-shadow: 0px 0px 7px #72ccff;
+}
+
+#shoptext_2 {
+  top: 5.3vw;
+  position: absolute;
+  left: 0.1vw;
+}
+
+#pistol {
+  position: absolute;
+  top: -1.9vw;
+  width: 13vw;
+  left: 22vw;
+  transform: rotate(316deg);
+  filter: drop-shadow( 0px 0px 5px #72ccff);
+  animation: bounceAnimation 3s infinite;
+}
+
+@keyframes bounceAnimation {
+  0% {
+    transform: rotate(316deg);
+  }
+  25% {
+    transform: rotate(333deg);
+  }
+  50% {
+    transform: rotate(359deg);
+  }
+  75% {
+    transform: rotate(333deg);
+  }
+  100% {
+    transform: rotate(316deg);
+  }
+}
+
+.ESC {
+  position: absolute;
+  left: 90.1vw;
+  top: 5.55vw;
+  color: #FFF;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#back {
+  color: #5C5C5C;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#back2 {
+  color: #5C5C5C;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#exit {
+  position: absolute;
+  top: 0vw;
+  width: 1vw;
+  height: 1.5vw;
+  left: -1.3vw;
+}
+
+.line2 {
+  position: absolute;
+  left: -1.60vw;
+  top: 1.3vw;
+  width: 6.6vw;
+  height: 0.09vw;
+  background: #0295b9;
+}
+
+.buy_class {
+  position: absolute;
+  top: 3vw;
+}
+
+@keyframes opacidad {0% { opacity: 0;} 100% {opacity: 100;}}
+
+
+.stats {
+  position: absolute;
+  width: 29.56vw;
+  height: 15vw;
+  flex-shrink: 0;
+  left: 1vw;
+  top: 2.6vw;
+}
+
+.text_stats {
+  position: relative;
+  left: 90.1vw;
+  top: 2.7vw;
+  color: #FFF;
+  font-size: 1vw;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.2vw;
+}
+
+.progress_stats {
+  position: relative;
+  left: 90.1vw;
+  top: 2.7vw;
+  width: 9.6vw;
+  height: 0.75vw;
+  flex-shrink: 0;
+  border: 0.4px solid #21526e;
+  background: #14394f;
+}
+
+.amount_progress {
+  position: relative;
+  left: 0vw;
+  top: 0vw;
+  width: 10.2vw;
+  height: 0.75vw;
+  flex-shrink: 0;
+  background: #00cdff;
+  transition: all 0.5s ease;
+}
+
+#damage_amount{
+  width: 0%;
+}
+
+#firerate_amount{
+  width: 0%;
+}
+
+#accuracy_amount{
+  width: 0%;
+}
+
+#range_amount{
+  width: 0%;
+}
+
+#damage_amount2{
+  width: 0%;
+}
+
+#firerate_amount2{
+  width: 0%;
+}
+
+#accuracy_amount2{
+  width: 0%;
+}
+
+#range_amount2{
+  width: 0%;
+}
+
+#damage {
+  position: absolute;
+  left: 4.4vw;
+  top: 2.4vw;
+  width: 7.6vw;
+  height: 1.5vw;
+}
+
+#damage_img {
+  position: absolute;
+  left: 2.4vw;
+  top: 2.3vw;
+  width: 1.5vw;
+}
+
+#firerate {
+  position: absolute;
+  left: 18.1vw;
+  top: 2.4vw;
+  width: 6.7vw;
+  height: 1.5vw;
+}
+
+#firerate_img {
+  position: absolute;
+  left: 15.3vw;
+  top: 2.6vw;
+  width: 2.3vw;
+}
+
+#accuracy {
+  position: absolute;
+  left: 4.2vw;
+  top: 7.5vw;
+  width: 7.8vw;
+  height: 1.5vw;
+}
+
+#accuracy_img {
+  position: absolute;
+  left: 2.3vw;
+  top: 7.4vw;
+  width: 1.5vw;
+}
+#firerate {
+  position: absolute;
+  left: 18.1vw;
+  top: 2.4vw;
+  width: 7.7vw;
+  height: 1.5vw;
+}
+#accuracy {
+  position: absolute;
+  left: 4.2vw;
+  top: 7.5vw;
+  width: 7.8vw;
+  height: 1.5vw;
+}
+#range {
+  position: absolute;
+  left: 18vw;
+  top: 7.4vw;
+  width: 6.8vw;
+  height: 1.5vw;
+}
+
+#range_img {
+  position: absolute;
+  left: 15.4vw;
+  top: 7.7vw;
+  width: 2vw;
+}
+
+#damage_progress {
+  position: absolute;
+  left: 2.1vw;
+  top: 4vw;
+}
+
+#firerate_progress {
+  position: absolute;
+  left: 15vw;
+  top: 4vw;
+}
+
+#accuracy_progress {
+  position: absolute;
+  left: 2.1vw;
+  top: 9vw;
+}
+
+#range_progress {
+  position: absolute;
+  left: 15vw;
+  top: 9vw;
+}
+
+#stats-2 {
+  position: absolute;
+  left: 17vw;
+  top: 9vw;
+}
+
+.buy {
+  position: absolute;
+  top: 43vw;
+  left: 42.2vw;
+  width: 16vw;
+  height: 4vw;
+  font-size: 28px;
+  background: linear-gradient(90deg, rgb(35, 94, 127) 0%, rgb(0, 161, 253) 31%, rgb(61, 196, 255) 100%);
+  box-shadow: 0px 0px 4px 3px #3788b7;
+  text-align: center;
+  transform-origin: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.buy:hover{
+  cursor: pointer;
+  transition: all 0.5s ease;
+  transform: scale(1.03);
+}
+
+#textbuy {
+  color: #FFF;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 0.04vw;
+  top: 1.05vw;
+  height: 3vw;
+  width: 16vw;
+  letter-spacing: 0.1vw;
+}
+
+.finish {
+  display: none;
+  position: relative;
+  left: 37.2vw;
+  top: 17.7vw;
+  width: 24vw;
+  height: 17.5vw;
+  flex-shrink: 0;
+  border: 2px solid #00cdff;
+  background: #0c2230;
+  box-shadow: 0px 0px 4px 2px #235e7f;
+  animation-name: popup;
+  animation-duration: 500ms;
+}
+
+.buy_finish {
+  position: absolute;
+  width: 9vw;
+  height: 3vw;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, rgb(35, 94, 127) 0%, rgb(0, 161, 253) 31%, rgb(61, 196, 255) 100%);
+  box-shadow: 0px 0px 4px 3px #3788b7;
+}
+
+.textfinish {
+  position: absolute;
+  left: 5.2vw;
+  top: 11.6vw;
+  color: #f3f3f3;
+  font-size: 1.36vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 10.7vw;
+  text-align: center;
+  font-style: italic;
+  width: 13.4vw;
+}
+
+#priceweapon{
+  color: #00a1fd;
+}
+
+.buy_finish2 {
+  position: absolute;
+  width: 9vw;
+  height: 3vw;
+  flex-shrink: 0;
+  background: rgba(0, 135, 153, 0);
+  border: 3px solid #00cdff; /* Define el borde */
+  box-sizing: border-box;
+  box-shadow: 0px 0px 4px 3px #3788b7;
+}
+
+.textfinish2 {
+  position: relative;
+  left: 5.2vw;
+  top: 11.6vw;
+  color: #00cdff;
+  font-size: 1.16vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 10.7vw;
+  text-align: center;
+  width: 13.4vw;
+}
+
+.textfinish3 {
+  position: relative;
+  left: 5.2vw;
+  top: 11.6vw;
+  color: #f3f3f3;
+  font-size: 1.16vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 10.7vw;
+  text-align: center;
+  width: 13.4vw;
+}
+
+#yes_buy {
+  left: 12.9vw;
+  top: 19.5vw;
+}
+
+#no_buy {
+  left: 2.1vw;
+  top: 19.5vw;
+}
+
+#yes_text {
+  left: 0.5vw;
+  top: 0.8vw;
+  width: 8vw;
+  display: block;
+}
+
+#no_text {
+  left: 0.2vw;
+  top: 0.6vw;
+  width: 8vw;
+  display: block;
+}
+
+.buy_finish:hover{
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transform: scale(1.03);
+}
+
+.buy_finish2:hover{
+  cursor: pointer;
+  transition: all 0.2s ease;
+  transform: scale(1.03);
+}
+
+.line_finish {
+  position: absolute;
+  left: -0.1vw;
+  top: -1vw;
+  width: 24.17vw;
+  height: 0.1vw;
+  background: #00cdff;
+  box-shadow: 0px 0px 4px 2px #235e7f;
+}
+
+.label_weapon_finish {
+  top: -3.5vw;
+  left: 0vw;
+  display: inline-block;
+  width: 24vw;
+  height: 6vw;
+  text-align: center;
+  color: var(--color-white);
+  font-size: 2vw;
+  text-shadow: 0px 0px 3px #f3f3f3;
+  font-weight: lighter;
+  position: absolute;
+}
+
+.stats2 {
+  position: absolute;
+  width: 25.56vw;
+  height: 15vw;
+  flex-shrink: 0;
+  left: 0.6vw;
+  top: -0.4vw;
+}
+
+.text_stats2 {
+  position: relative;
+  left: 90.1vw;
+  top: 2.7vw;
+  color: #FFF;
+  font-size: 0.6vw;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.2vw;
+}
+
+.progress_stats2 {
+  position: relative;
+  left: 90.1vw;
+  top: 2.7vw;
+  width: 7.6vw;
+  height: 0.75vw;
+  flex-shrink: 0;
+  border: 0.4px solid #21526e;
+  background: #14394f;
+}
+
+#damage_img2 {
+  position: absolute;
+  left: 2.4vw;
+  top: 2.6vw;
+  width: 1.1vw;
+}
+#firerate_img2 {
+  position: absolute;
+  left: 13.3vw;
+  top: 2.9vw;
+  width: 1.5vw;
+}
+#accuracy_img2 {
+  position: absolute;
+  left: 2.5vw;
+  top: 7.6vw;
+  width: 1vw;
+}
+#range_img2 {
+  position: absolute;
+  left: 13.4vw;
+  top: 7.7vw;
+  width: 1.5vw;
+}
+
+#damage_progress2 {
+  position: absolute;
+  left: 2.1vw;
+  top: 4vw;
+}
+
+#firerate_progress2 {
+  position: absolute;
+  left: 13vw;
+  top: 4vw;
+}
+
+#accuracy_progress2 {
+  position: absolute;
+  left: 2.1vw;
+  top: 9vw;
+}
+
+#range_progress2 {
+  position: absolute;
+  left: 13vw;
+  top: 9vw;
+}
+
+#firerate2 {
+  position: absolute;
+  left: 15.3vw;
+  top: 2.8vw;
+  width: 6.7vw;
+  height: 1.5vw;
+}
+#accuracy2 {
+  position: absolute;
+  left: 3.9vw;
+  top: 7.6vw;
+  width: 7.8vw;
+  height: 1.5vw;
+}
+#range2 {
+  position: absolute;
+  left: 15.4vw;
+  top: 7.6vw;
+  width: 6.8vw;
+  height: 1.5vw;
+}
+#damage2 {
+  position: absolute;
+  left: 4.1vw;
+  top: 2.8vw;
+  width: 7.6vw;
+  height: 1.5vw;
+}
+
+.popdown {
+  animation-name: popdown;
+  animation-duration: 500ms;
+}
+
+.backgroungbuy {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: #0000009a;
+  position: absolute;
+  top: 0vw;
+  animation: opacidad 0.5s ease-in-out forwards;
+}
+
+.desc {
+  position: relative;
+  left: 0vw;
+  top: 0.7vw;
+  width: 24vw;
+  height: 10vw;
+}
+
+.desc_text {
+  position: relative;
+  left: 0vw;
+  top: 2.7vw;
+  color: #FFF;
+  font-size: 0.6vw;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.2vw;
+  text-align: center;
+}
+
+.desc-icon {
+  position: absolute;
+  top: 3vw;
+  left: -1.2vw;
+  width: 1.2vw;
+}
+
+.desc2 {
+  position: relative;
+  left: 4.5vw;
+  top: 2.9vw;
+  width: 22vw;
+  height: 12vw;
+}
+
+.desc3 {
+  position: relative;
+  left: 3.5vw;
+  top: 0.9vw;
+  width: 17vw;
+  height: 10vw;
+}
+
+.desc_text2 {
+  position: relative;
+  left: 0.5vw;
+  top: 2.7vw;
+  color: #FFF;
+  font-size: 0.8vw;
+  border-left: 2px solid #72ccff;
+  padding-left: 15px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.1vw;
+  text-align: left;
+}
+
+@keyframes popup {
+  from {
+      opacity: 0;
+      transform: scale(0, 0);
+  }
+  to {
+      opacity: 1.0;
+      transform: scale(100%, 100%);
+  }
+}
+
+@keyframes popdown {
+  from {
+      opacity: 1.0;
+      transform: scale(100%, 100%);
+  }
+  to {
+      opacity: 0;
+      transform: scale(0, 0);
+  }
+}
+
+@media screen and (min-width: 2440px) and (max-width: 2560px) {
+  .rectangle-parent {
+    opacity: 0;
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 1440px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 21px;
+    color: var(--color-white);
+
+    animation: opacidad 0.5s ease-in-out forwards;
+    background: #00000051;
+  }
+  
+  .intro {
+    background: #00000051;
+    display: none;
+    width: 100%;
+    height: 2560px;
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    text-align: left;
+    font-weight: 600;
+    font-size: 21px;
+    animation: opacidad 0.5s ease-in-out forwards;
+  }
+
+  .shoptext {
+    position: absolute;
+    left: 44.5vw;
+    top: 8.7vw;
+    color: #FFF;
+    text-shadow: 0px 0px 7px #f3f3f3;
+    font-size: 4.7vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+  }
+
+  .botton_see {
+    position: absolute;
+    top: 31vw;
+    left: 44.7vw;
+    width: 16vw;
+    height: 4vw;
+    font-size: 28px;
+    background: linear-gradient(90deg, rgb(35, 94, 127) 0%, rgb(0, 161, 253) 31%, rgb(61, 196, 255) 100%);
+    box-shadow: 0px 0px 4px 4px #235e7f;
+    text-align: center;
+    transform-origin: center;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .frame-child {
+    position: absolute;
+    top: 44vw;
+    left: 0vw;
+    background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7) 66.15%);
+    width: 100vw;
+    height: 13vw;
+  }
+
+  .buy_class {
+    position: absolute;
+    top: -8vw;
+  }
+  .botton_see {
+    position: absolute;
+    top: 27vw;
+  }
+  
+  .botton_see2 {
+    position: absolute;
+    top: 33.8vw;
+  }
+}

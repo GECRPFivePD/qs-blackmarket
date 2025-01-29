@@ -1,0 +1,24 @@
+Locales['es'] = {
+    ['BLACKMARKET_HELPTEXT_OPEN'] = "[E] - ABRIR",
+    ['BLACKMARKET_TARGET_OPEN'] = "ABRIR",
+    
+    ['BLACKMARKET_NOTIFICATION_NO_BUY_MORE'] = "¡No puedes comprar más de esto!",
+    ['BLACKMARKET_NOTIFICATION_NO_MONEY'] = "No tienes suficiente dinero",
+    ['BLACKMARKET_NOTIFICATION_PURCHASED'] = "Has comprado con éxito",
+    
+    ['BLACKMARKET_UI_DAMAGE'] = "DAÑO",
+    ['BLACKMARKET_UI_FIRERATE'] = "CADENCIA",
+    ['BLACKMARKET_UI_ACCURACY'] = "PRECISIÓN",
+    ['BLACKMARKET_UI_RANGE'] = "ALCANCE",
+    ['BLACKMARKET_UI_TITLE'] = "ILEGAL",
+    ['BLACKMARKET_UI_TITLE2'] = "ARMAS",
+    ['BLACKMARKET_UI_TITLE3'] = "tienda",
+    ['BLACKMARKET_UI_SEE_WEAPONS'] = "» VER ARMAS «",
+    ['BLACKMARKET_UI_SEE_ITEMS'] = "» VER ITEMS «",
+    ['BLACKMARKET_UI_BUY_WEAPON'] = "» COMPRAR ARMA «",
+    ['BLACKMARKET_UI_BUY_ITEM'] = "» COMPRAR ITEM «",
+    ['BLACKMARKET_UI_BUY'] = "¿Quieres comprarlo por",
+    ['BLACKMARKET_UI_YES'] = "SÍ",
+    ['BLACKMARKET_UI_NO'] = "NO",
+    ['BLACKMARKET_UI_ESCBACK'] = "VOLVER",  
+}
