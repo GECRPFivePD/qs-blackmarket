@@ -161,56 +161,8 @@ BlackMarket = {
 
         Item = {
             {
-                {coord={0.8, 0.0, 2.0, 0.0, 0.0, 0.0},prop="prop_c4_final",name="bread",label="c4",price=1200, maxquantity = 1,
-                    desc = "This powerful adhesive explosive is designed for sabotage and ambushes, offering remote detonation capabilities for precise and devastating outcomes."
-                },
-                {coord={0.3, 0.0, 2.0, 0.0, 0.0, 0.0},prop="prop_gas_mask_hang_01bb",name="MASK",label="MASK",price=1200, maxquantity = 1,
-                    desc = "Essential protection against toxic gases and harmful chemicals. Ideal for operations in hazardous environments and gas attacks."
-                },
-                {coord={-0.3, 0.0, 2.0, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-                {coord={-0.8, 0.0, 2.0, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-
-                {coord={0.8, 0.0, 1.5, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-                {coord={0.3, 0.0, 1.5, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-                {coord={-0.3, 0.0, 1.5, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-                {coord={-0.8, 0.0, 1.5, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-
-                {coord={0.8, 0.0, 1.0, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-                {coord={0.3, 0.0, 1.0, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-                {coord={-0.3, 0.0, 1.0, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-                {coord={-0.8, 0.0, 1.0, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-
-                {coord={0.8, 0.0, 0.50, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-                {coord={0.3, 0.0, 0.50, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-                {coord={-0.3, 0.0, 0.50, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
-                },
-                {coord={-0.8, 0.0, 0.50, 0.0, 0.0, 0.0},prop="prop_c4_final",name="c4",label="c4",price=1200, maxquantity = 1,
-                   desc = "High-powered adhesive explosive, ideal for sabotage and ambushes. Remote detonation for maximum precision and destruction."
+                {coord={0.8, 0.0, 2.0, 0.0, 0.0, 0.0},prop="prop_tool_screwdvr02",name="lockpick",label="lockpick",price=2000, maxquantity = 1,
+                    desc = "This powerful lockpick will allow you to break into more places."
                 },
             }, 
 
